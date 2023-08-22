@@ -17,6 +17,6 @@ def main():
                 [4, 5, 6],
                 [7, 8, 9]]
     total = values(matriz)
-    print("Total Sum: {}".format(total))
+    print("Soma Total: {}".format(total))
 
 main()
