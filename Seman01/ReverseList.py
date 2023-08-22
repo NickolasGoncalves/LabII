@@ -6,7 +6,7 @@ def reverse_list(list):
     reverse = []
     for i in range(len(list) - 1, -1, -1):
         reverse.append(list[i])
-    return reverse #
+    return reverse # Devolvendo para a função GLOBAL
 #Passo 1: Criar uma lista
 #Passo 2: Enviar a Função '(Reverse)'.
 #Passo 3: Criar uma Variavel para receber a nova lista;
