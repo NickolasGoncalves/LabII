@@ -12,7 +12,7 @@ def sumvalues(matriz):
     for x in range(0, tam):
         #print(x, tam) Verificar tamanho
         for z in range(x):
-            print(z, x)
+            #print(x, z) Verificar Posição dos Números somados
             total += matriz[x][z]
             
     return total
