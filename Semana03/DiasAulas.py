@@ -7,14 +7,18 @@ Passo 5: Retornar ao Main
 
 '''
 def day(days):
-    day = {}
-    day['Domingo'] = ['Sem Aula']
-    day['Segunda']= ['Sem Aula']
-    day['Terça'] = ['Laborátorio de Algoritmo II']
-    day['Quarta'] = ['Sem Aula']
-    day['Quinta']= ['Probabilidade e Estatistica']
-    day['sexta'] = ['Fundamentos de Economia e Administração']
-    day['sabado'] = ['Sem Aula']
+    day = {
+    'Domingo',
+    'Segunda',
+    'Terça',
+    'Quarta',
+    'Quinta', 
+    'sexta', 
+    'sabado'
+    }
+    for day in week_days:
+        class_day = input(f"Qual aula você têm na(o) {day}")
+        week[day] = class_day
     
     for days, content in day.items():
         print(days, content)
