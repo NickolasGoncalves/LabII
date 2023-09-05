@@ -21,6 +21,7 @@ def Vowel(texto):
 '''
 Passo 1: Criar um Parametro para minha função.
 Passo 2: Chamar a Função Vowel
+'''
 def main():
     text = input("Digite seu Texto: ")
     counter = Vowel(text)
