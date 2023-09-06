@@ -41,6 +41,40 @@ def include_contacts(contacts):
             
         print("Contato Inexistente")
         
+def delete_contact(contacts):
+    name = input("Digite o nome do contato que deseja excluir: ")
+    
+    if name in contacts:
+        contacts.pop[name]
+    else:
+        print(f"O Contato {name} não existe.")
+        
+    
+    if len(contacts[name]) == 1:
+        contacts.pop[name]
+        return
+    
+    if name in contacts:
+        print("Telefones: ")
+        if index in range(len(contacts[name])):
+            print(f" {index} : {contacts[name][index]}")
+        remove_index = int(input(" Qual número deseja remover ?"))
+        contacts[name].pop(remove_index)
+        
+    else:
+        print(f"Contato {name} Inexistente")
+        
+def find_contacts(contacts):
+    name = input("Digite o nome de Contato: ")
+    
+    if name in contacts:
+        print("Telefones: ")
+        
+        for phone in contacts:
+            print(f" {phone} ")
+            
+    else:
+        print(f"O contato {name} não existe.")
         
 def main():
     
@@ -49,13 +83,18 @@ def main():
         option = menu()
         if option == 1:
             add_contact(contacts)
-        
         elif option == 2:
             include_contacts(contacts)
-                
-            
+        elif option == 3:
+            delete_contact(contacts)
+        elif option == 4:
+            delete_contact(contacts)
+        elif option == 5:
+            find_contacts(contacts)
+        elif option == 6:
+            print(contacts)
         elif option == 7:
-            print(f"Contatos{contacts}")
+            print(f"Tchau!")
             break
     
     
