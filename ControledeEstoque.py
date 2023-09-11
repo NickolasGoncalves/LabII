@@ -1,38 +1,29 @@
-def add_produto(estoque, nome_produto = None):
-
-    if nome_produto:
-        produto = produto_name
-        
-    produto = input("Nome do Produto: ")
-
-    estoque[produto] = []
+def adicionar_produto(my_dict):
+    product_name = input("Digite o nome do produto (ou deixe vazio para sair): ")
     
+    if product_name == '':
+        return
+    
+    product_amount = int(input("Digite a quantidade do produto: "))
+    product_price = float(input("Digite o preço do produto: "))
 
-    while True:
-        print("Para finalizar digite '0': ")
-        quantidade = int(input(f"Digite a quantidade {produto}: "))
-        if quantidade <= 0:
-            break
-        
-        else: 
-            valor = float(input(f"Digite valor do {produto}: "))
-          
-        estoque[produto].append(quantidade)
-        estoque[produto].append(valor)
-
-        return 
-
-
-        
-
-
+    my_dict[product_name] = {
+      "amount": product_amount,
+      "price": product_price
+    }
 
 def main():
+    my_dict= {}
+    
+    while True:
+        adicionar_produto(my_dict)
+        
+       
+        if input("Deseja adicionar outro produto? (s/n): ").lower() != "s":
+            break
+    
+  
 
-    estoque = {}
-
-    add_produto(estoque)
-    print(add_produto(estoque))
 
 
 main()
