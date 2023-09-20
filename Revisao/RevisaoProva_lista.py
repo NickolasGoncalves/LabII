@@ -1,5 +1,5 @@
 my_list = [8 ,6 ,9 ,4 ,2 ,3 ,5 ,7 , 1]
-
+'''
 for index_one in range(len(my_list)):
   min_index = index_one
   
@@ -11,3 +11,14 @@ for index_one in range(len(my_list)):
 min_value = my_list[min_index]
 my_list[min_index] = my_list[index_one]
 my_list[index_one] = min_value
+'''
+for index in range(len(my_list):              
+  for index_one in range(len(my_list)):
+    if (index_one + 1) < len(my_list) and my_list[index_one] > my_list[index_one + 1]
+    tmp = my_list[index_one]
+    my_list[index_one] = my_list[index + 1]
+  
+print(my_list)
+
+
+
