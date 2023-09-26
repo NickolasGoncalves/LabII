@@ -26,4 +26,3 @@ def sales_report(sales_dict):
             quantity_sold = sales_dict[product_name]["quantidade_amount"]
             sale_value = sales_dict[product_name]["valor_price"]
             print(f"Venda - {index}: Produto: {product_name} Quantidade vendida: {quantity_sold} No valor total de: R${sale_value}")
-        
